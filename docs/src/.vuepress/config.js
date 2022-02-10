@@ -23,8 +23,8 @@ module.exports = {
         link: '/config/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'GitHub',
+        link: 'https://github.com/EddyRock/rock-ui'
       }
     ],
     sidebar: {
