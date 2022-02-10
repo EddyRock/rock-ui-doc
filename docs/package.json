@@ -1,0 +1,19 @@
+{
+  "name": "rock-ui-doc",
+  "version": "0.0.1",
+  "description": "Easy to use ui-lib",
+  "main": "index.js",
+  "authors": {
+    "name": "Eduard Rudnev",
+    "email": "eduardrudnev97@gmail.com"
+  },
+  "repository": "https://github.com/EddyRock/rock-ui-doc/rock-ui-doc",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
