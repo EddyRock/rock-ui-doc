@@ -201,3 +201,107 @@ export default {
 };
 </script>
 ````
+
+## Paginator
+* length - the length of pages - **Number**
+* totalVisible - how many pages you can see on the paginator - **Number**
+* isShortVersion - turns on a sort version of paginator - **Boolean**
+* hasNextPage - shows is next page exist, if not next button will be disabled - **Boolean**
+
+
+````vue
+<template>
+  <rock-paginator
+      :length="10"
+      :totalVisible="3"
+      isShortVersion
+      hasNextPage="true"
+  />
+</template>
+
+<script>
+import { RockPaginator } from '@eddy_rock_js/rock-ui';
+
+export default {
+  name: 'component',
+  components: {
+    RockPaginator
+  },
+  data: () => {
+    return {};
+  }
+};
+</script>
+````
+
+## Progressbar
+No need any special props.
+
+````vue
+<template>
+  <rock-progressbar v-model="value" />
+</template>
+
+<script>
+import { RockProgressbar } from '@eddy_rock_js/rock-ui';
+
+export default {
+  name: 'component',
+  components: {
+    RockProgressbar
+  },
+  data: () => {
+    return {
+      value: 10,
+    };
+  }
+};
+</script>
+````
+
+## Radiobutton
+
+* buttons - adds different possible values
+
+````vue
+<template>
+  <rock-radiobutton
+      v-model="radio"
+      class="main__radiobuttons"
+      :buttons="buttons"
+  />
+</template>
+
+<script>
+import { RockRadiobutton } from '@eddy_rock_js/rock-ui';
+
+export default {
+  name: 'component',
+  components: {
+    RockRadiobutton
+  },
+  data: () => {
+    return {
+      buttons: [
+        {
+          name: 'One',
+          value: 'one',
+          disabled: true,
+          active: true,
+        },
+        {
+          name: 'Two',
+          value: 'two',
+          disabled: false,
+        },
+        {
+          name: 'Three',
+          value: 'three',
+        },
+      ],
+      radio: null,
+    };
+  }
+};
+</script>
+````
